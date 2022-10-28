@@ -12,7 +12,7 @@ import java.io.Serializable;
 @Builder
 public class LogEntry implements Serializable, Comparable {
 
-    private long index;
+    private Long index;
     private long term;
     private Command command;
 
