@@ -2,6 +2,8 @@ package com.zyk.raft.kv.entity;
 
 import lombok.Builder;
 import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.io.Serializable;
 
@@ -10,6 +12,8 @@ import java.io.Serializable;
  */
 @Data
 @Builder
+@Getter
+@Setter
 public class LogEntry implements Serializable, Comparable {
 
     private Long index;
@@ -24,4 +28,5 @@ public class LogEntry implements Serializable, Comparable {
 
         return this.getIndex() > ((LogEntry) o).getIndex() ? 1 : -1;
     }
+    
 }
