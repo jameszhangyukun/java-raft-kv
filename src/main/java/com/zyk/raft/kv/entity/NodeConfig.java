@@ -22,7 +22,7 @@ public class NodeConfig {
     /**
      * 所有节点地址
      */
-    private List<String> address;
+    private List<String> peerAddrs;
     /**
      * 状态机快照存储类型
      */

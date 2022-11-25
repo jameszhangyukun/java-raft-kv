@@ -1,8 +1,11 @@
 package com.zyk.raft.kv.entity;
 
 
+import lombok.Getter;
+
 import java.util.Objects;
 
+@Getter
 public class Peer {
     private final String addr;
 
